@@ -1,0 +1,17 @@
+4097false
+...................0.5460218444054097.0F............
+
+Failures:
+
+  1) #binary_multiple_of_4? rejects invalid binary numbers [10 points]
+     Failure/Error: expect(binary_multiple_of_4?('a100')).to be_falsy, "'a100' is not a valid binary number!"
+       'a100' is not a valid binary number!
+     # ./spec/part2_spec.rb:55:in `block (2 levels) in <top (required)>'
+
+Finished in 0.04106 seconds (files took 0.10701 seconds to load)
+34 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/part2_spec.rb:54 # #binary_multiple_of_4? rejects invalid binary numbers [10 points]
+
