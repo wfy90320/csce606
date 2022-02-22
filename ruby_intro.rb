@@ -74,19 +74,18 @@ end
 
 def binary_multiple_of_4? s
   # YOUR CODE HERE
-=begin
-  if s.chr == "0" && s.length != 1
-    s = s.slice!(0).dup
-  end
-
-  new_s  = s.to_i(10).to_s
-  print("new_s",new_s)
-  if s != new_s
+  if s == ''
     return false
   end
-=end
+
+  for n in 0...s.length
+    if s[n] != "1" && s[n] != "0"
+      return false
+    end
+  end
+  
   decimal = s.to_i(2)#Convert binary to decimal number 
-  print(decimal)
+  
   if (decimal % 4 == 0)#Test if the decimal number is multiple of 4
     return true
   else 
@@ -94,7 +93,7 @@ def binary_multiple_of_4? s
   end
 
 end
-puts binary_multiple_of_4?("1000000000001")
+#puts binary_multiple_of_4?('100')
 # Part 3
 
 class BookInStock
